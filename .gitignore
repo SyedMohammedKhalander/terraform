@@ -1,6 +1,6 @@
-# .terraform.lock.hcl
-# .terraform.tfsate.lock.info
-# .terraform
-# terraform.tfsate
-# terraform.tfsate.backup
-# .DS_Strore
+.terraform.lock.hcl
+.terraform.tfsate.lock.info
+.terraform
+terraform.tfsate
+terraform.tfsate.backup
+.DS_Strore
