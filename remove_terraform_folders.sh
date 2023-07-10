@@ -1,2 +1,2 @@
 #!/bin/bash
-find /Users/syedmohammedkhalander/Desktop/terraform -type d -name '.terraform*' -exec rm -rf {} +
+find /Users/syedmohammedkhalander/Downloads/terraform -type d -name '.terraform*' -exec rm -rf {} +
