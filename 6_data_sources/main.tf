@@ -18,11 +18,12 @@ data "aws_ami" "example" {
 
   owners = ["amazon"]
   filter {
-    name   = "Description"
-    values = ["Amazon Linux 2023 AMI 2023.1.20230705.0 x86_64 HVM kernel-6.1"]
+    name   = "name"
+    values = ["amzn2-ami-hvm*"]
   }
 }
 
+# change the region using aws configure and then terraform plan u can see the ami changes based on region
 resource "aws_instance" "data_sources" {
   ami           = data.aws_ami.example.id
   instance_type = "t2.micro"
