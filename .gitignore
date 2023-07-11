@@ -1,6 +1,4 @@
+*.tfstate
+*.tfstate.*
 .terraform.lock.hcl
-.terraform.tfsate.lock.info
 .terraform
-terraform.tfsate
-terraform.tfsate.backup
-.DS_Strore
