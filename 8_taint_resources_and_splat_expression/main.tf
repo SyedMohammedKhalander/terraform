@@ -21,9 +21,11 @@ resource "aws_instance" "taint_instance" {
     Name = "HelloWorld${count.index}"
   }
 }
-# to replace delete the old and replace it by new because have done manual changes on resource
-# terraform apply -replace="aws_instance.taint_instance[0]" -replace="aws_instance.taint_instance[1]"
-# if only single resource terraform apply -replace="aws_instance.taint_instance"
+/*
+to replace delete the old and replace it by new because have done manual changes on resource
+terraform apply -replace="aws_instance.taint_instance[0]" -replace="aws_instance.taint_instance[1]"
+if only single resource terraform apply -replace="aws_instance.taint_instance"
+*/
 
 output "ip" {
   value = aws_instance.taint_instance[*].public_ip

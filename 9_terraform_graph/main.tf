@@ -36,8 +36,9 @@ resource "aws_security_group" "allow_tls" {
   }
 }
 
-
-# terraform graph > graph.dot
-# yum install graphviz
-# cat graph.dot | dot -Tsvg > graph.svg
-# open the graph.svg in server
+/*
+terraform graph > graph.dot
+yum install graphviz
+cat graph.dot | dot -Tsvg > graph.svg
+open the graph.svg in server
+*/
